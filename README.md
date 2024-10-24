@@ -1,46 +1,45 @@
-
 # Axeptio Client SGTM Public Template
 
-Ce projet est un template pour intégrer Axeptio en tant que CMP (Consent Management Platform) avec GTM (Google Tag Manager) côté serveur. Ce client SGTM est conçu pour faciliter l'importation d'Axeptio dans GTM Server Side.
+This project is a template for integrating Axeptio as a CMP (Consent Management Platform) with GTM (Google Tag Manager) Server-Side. This SGTM client is designed to simplify the import of Axeptio into GTM Server-Side.
 
-## À propos de Axeptio
+## About Axeptio
 
-[Axeptio](https://www.axept.io) est une plateforme de gestion des consentements (CMP) conforme aux réglementations RGPD et ePrivacy. Axeptio permet aux sites web de recueillir, gérer et stocker les consentements des utilisateurs de manière transparente et respectueuse de leur vie privée.
+[Axeptio](https://www.axept.io) is a Consent Management Platform (CMP) that complies with GDPR and ePrivacy regulations. Axeptio allows websites to collect, manage, and store user consent in a transparent and privacy-respecting way.
 
-### Caractéristiques principales d'Axeptio :
-- Conformité totale avec le RGPD et la directive ePrivacy.
-- Interface utilisateur intuitive et personnalisable.
-- Intégration rapide avec les outils de gestion des cookies.
-- Gestion dynamique des scripts en fonction du consentement de l'utilisateur.
+### Key Features of Axeptio:
+- Full compliance with GDPR and the ePrivacy directive.
+- Intuitive and customizable user interface.
+- Quick integration with cookie management tools.
+- Dynamic script management based on user consent.
 
-## Installation dans GTM Server Side
+## Installation in GTM Server-Side
 
-### Étape 1 : Importation du modèle dans GTM Server Side
-1. Clonez ou téléchargez ce dépôt.
-2. Ouvrez votre GTM Server Side Container dans Google Tag Manager.
-3. Allez dans la section **Templates** et sélectionnez **Import**.
-4. Importez le fichier JSON correspondant au modèle Axeptio Client SGTM.
+### Step 1: Import the Template into GTM Server-Side
+1. Clone or download this repository.
+2. Open your GTM Server-Side container in Google Tag Manager.
+3. Navigate to the **Templates** section and select **Import**.
+4. Import the JSON file corresponding to the Axeptio Client SGTM template.
 
-### Étape 2 : Configuration du Tag
-1. Après l'importation, allez dans la section **Tags** de votre GTM Server Side.
-2. Créez un nouveau tag et sélectionnez le modèle Axeptio Client que vous venez d'importer.
-3. Configurez les paramètres nécessaires pour intégrer Axeptio à votre site web :
-   - **Site ID** : Renseignez votre ID de site Axeptio.
-   - **Configuration des cookies** : Définissez les cookies à gérer via Axeptio.
-4. Définissez les déclencheurs qui activeront ce tag en fonction des événements souhaités.
+### Step 2: Tag Configuration
+1. After the import, go to the **Tags** section in your GTM Server-Side.
+2. Create a new tag and select the Axeptio Client template you just imported.
+3. Configure the necessary parameters to integrate Axeptio with your website:
+   - **Site ID**: Enter your Axeptio site ID.
+   - **Cookie Configuration**: Define the cookies to be managed via Axeptio.
+4. Set the triggers that will activate this tag based on the desired events.
 
-### Étape 3 : Testez votre configuration
-1. Utilisez l'outil **Preview** de GTM Server Side pour tester la bonne intégration et le bon fonctionnement de votre tag Axeptio.
-2. Vérifiez que les consentements sont correctement recueillis et transmis via le serveur.
+### Step 3: Test Your Configuration
+1. Use GTM Server-Side's **Preview** tool to test the correct integration and functionality of your Axeptio tag.
+2. Verify that consent is properly collected and transmitted via the server.
 
-## Plus d'informations
+## More Information
 
-Pour plus de détails sur la configuration d'Axeptio, vous pouvez consulter la [documentation officielle](https://www.axept.io/docs).
+For more details on configuring Axeptio, you can refer to the [official documentation](https://www.axept.io/docs).
 
-### Liens utiles :
-- [Axeptio - Gestion des Consentements](https://www.axept.io)
-- [GTM Server Side - Documentation Google](https://developers.google.com/tag-manager/serverside)
+### Useful Links:
+- [Axeptio - Consent Management](https://www.axept.io)
+- [GTM Server-Side - Google Documentation](https://developers.google.com/tag-manager/serverside)
 
 ---
 
-Axeptio vous aide à offrir une meilleure expérience utilisateur tout en assurant la conformité avec les lois de protection des données. Si vous avez des questions ou des suggestions d'amélioration pour ce template, n'hésitez pas à ouvrir une issue ou à créer une pull request.
+Axeptio helps you offer a better user experience while ensuring compliance with data protection laws. If you have any questions or suggestions for improving this template, feel free to open an issue or create a pull request.
