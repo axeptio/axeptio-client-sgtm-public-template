@@ -104,31 +104,38 @@ if (requestPath.indexOf('/consents') > -1) {
     obj.event_name = 'consents';
     
     const axeptio_authorized_vendors = getCookie('axeptio_authorized_vendors')[0];
-    setCookie('axeptio_authorized_vendors', axeptio_authorized_vendors, {
-      domain: 'auto',
-      path: '/',
-      secure: true,
-      'max-age': 34187400,
-      HttpOnly: false
-    });
-    
+    if(axeptio_authorized_vendors) {
+      setCookie('axeptio_authorized_vendors', axeptio_authorized_vendors, {
+        domain: 'auto',
+        path: '/',
+        secure: true,
+        'max-age': 34187400,
+        HttpOnly: false
+      });
+    }
+  
     const axeptio_all_vendors = getCookie('axeptio_all_vendors')[0];
-    setCookie('axeptio_all_vendors', axeptio_all_vendors, {
-      domain: 'auto',
-      path: '/',
-      secure: true,
-      'max-age': 34187400,
-      HttpOnly: false
-    });
-    
+    if(axeptio_all_vendors) {
+      setCookie('axeptio_all_vendors', axeptio_all_vendors, {
+        domain: 'auto',
+        path: '/',
+        secure: true,
+        'max-age': 34187400,
+        HttpOnly: false
+      });
+    }   
+      
     const axeptio_cookies = getCookie('axeptio_cookies')[0];
-    setCookie('axeptio_cookies', axeptio_cookies, {
-      domain: 'auto',
-      path: '/',
-      secure: true,
-      'max-age': 34187400,
-      HttpOnly: false
-    });
+    if(axeptio_cookies) {
+      setCookie('axeptio_cookies', axeptio_cookies, {
+        domain: 'auto',
+        path: '/',
+        secure: true,
+        'max-age': 34187400,
+        HttpOnly: false
+      });
+    }
+
     
   // Add querystring parameters to event data object
   for (var parameter in queryParameters) {
